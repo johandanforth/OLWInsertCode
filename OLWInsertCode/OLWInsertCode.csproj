@@ -8,8 +8,8 @@
     <ProjectGuid>{2B7B56D5-82EE-42CB-8AA6-AB5F5D85B0B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WLWInsertCode</RootNamespace>
-    <AssemblyName>WLWInsertCode</AssemblyName>
+    <RootNamespace>OLWInsertCode</RootNamespace>
+    <AssemblyName>OLWInsertCode</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

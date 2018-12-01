@@ -11,10 +11,10 @@ There are a couple of ways to show syntax-highlighted code in your blog posts. T
 At the time I wrote this, I just wanted to mimic the color choices I'd set in Visual Studio. The nice thing about Visual Studio is that if you copy some code to the clipboard, it also adds an RTF (rich text format) version of the code alongside the plain text version. That RTF version contains all the font colors you'd set in Visual Studio, encoded as part of the RTF. This plug-in will look for an RTF encoding of some code in the clipboard and convert it to HTML with `<span>` elements galore. It also gets wrapped in a class-named `<pre>` code block so you can set some general CSS for all your code blocks in your posts.
 
 
-Using with Window Live Writer
+Using with Open Live Writer
 ===
 
-Compiling the code with Visual Studio will produce a DLL called `OLWSpecialTags.dll`. Make sure you are not running Open Live Writer, then copy this DLL to the `Plugins` folder off from the installation folder for Open Live Writer (you might need to create it if this is the first plugin you're using). Restart Open Live Writer.
+Compiling the code with Visual Studio will produce a DLL called `OLWInsertCode.dll`. Make sure you are not running Open Live Writer, then copy this DLL to the `Plugins` folder off from the installation folder for Open Live Writer (you might need to create it if this is the first plugin you're using). Restart Open Live Writer.
 
 To paste some code, highlight and copy it from Visual Studio. Switch to Open Live Writer, go to the Insert tab, and look in the Plug-ins ribbon group. Select Paste Code from VS and the code will be inserted into the document, as formatted in Visual Studio.
 

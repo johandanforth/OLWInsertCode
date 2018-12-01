@@ -3,9 +3,9 @@ using System.Windows.Forms;
 using OpenLiveWriter.Api;
 using RtfToHtml;
 
-namespace WLWInsertCode {
+namespace OLWInsertCode {
 
-  [WriterPlugin("F85C3533-BC93-49e8-8273-4FA33D21EDCC", "PasteCodeFromVS")]
+  [WriterPlugin("9DD2F859-25C5-4236-B022-C34335D37360", "PasteCodeFromVS")]
   [InsertableContentSource("Paste Code From VS")]
   public class VSCodePaster : ContentSource {
 
