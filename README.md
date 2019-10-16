@@ -1,7 +1,7 @@
-﻿Open Live Writer paste code from VS
+﻿Open Live Writer paste code
 ===
 
-_Fork from [OLWInsertCode](https://github.com/coldscientist/OLWInsertCode) from Julian M Bucknall to allow pasting code from any program into Open Live Writer_
+_Fork from [OLWInsertCode](https://github.com/coldscientist/OLWInsertCode) to allow pasting code from any program into Open Live Writer_
 
 Introduction
 ---
@@ -10,6 +10,13 @@ There are a couple of ways to show syntax-highlighted code in your blog posts. T
 
 At the time I wrote this, I just wanted to mimic the color choices I'd set in Visual Studio. The nice thing about Visual Studio is that if you copy some code to the clipboard, it also adds an RTF (rich text format) version of the code alongside the plain text version. That RTF version contains all the font colors you'd set in Visual Studio, encoded as part of the RTF. This plug-in will look for an RTF encoding of some code in the clipboard and convert it to HTML with `<span>` elements galore. It also gets wrapped in a class-named `<pre>` code block so you can set some general CSS for all your code blocks in your posts.
 
+[Notepad++](http://notepad-plus.sourceforge.net/uk/site.htm) has a plugin called "[NppExport]((https://stackoverflow.com/questions/3475790/copy-notepad-text-with-formatting))" (comes pre-installed) that allows you to copy to RTF, HTML and ALL
+
+1. Select the Text
+1. From the menu, go to Plugins > NPPExport (comes pre-installed) > Copy RTF to clipboard
+1. A shortcut is to use: [Settings > Shortcut Mapper > Plugin Commands > Copy all Formats to clipboard] and set it to CTRL+SHIFT+C. CTRL+C to copy the raw text, CTRL+SHIFT+C to copy with formatting.
+
+It is worth mentioning that **64-bit Notepad++ does not support Plugin Manager and NPPExport**.
 
 Using with Open Live Writer
 ===
