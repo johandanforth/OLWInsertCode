@@ -11,15 +11,19 @@ namespace OLWInsertCode {
 
     public override DialogResult CreateContent(IWin32Window dialogOwner, ref string content) {
       DialogResult result = DialogResult.OK;
-
+	  
+      string s = Environment.NewLine;
+      string html = null;
       if (Clipboard.ContainsText(TextDataFormat.Rtf)) {
-        string s = Clipboard.GetText(TextDataFormat.Rtf);
-        string html = RtfParser.ParseRtf(s);
-        content = String.Format("<div class=\"jmbcodeblock\">{0}<pre>{1}{0}</pre>{0}</div>{0}", Environment.NewLine, html);
+        s = Clipboard.GetText(TextDataFormat.Rtf);
+        html = RtfParser.ParseRtf(s);
+      } else {
+        // content = "Clipboard is empty of RTF text. Did you copy some code from Visual Studio?";
+        s = Clipboard.GetText();
+        html = System.Net.WebUtility.HtmlEncode(s);
       }
-      else {
-        content = "Clipboard is empty of RTF text. Did you copy some code from Visual Studio?";
-      }
+	  
+      content = String.Format("<div class=\"jmbcodeblock\">{0}<pre>{1}{0}</pre>{0}</div>{0}<p></p>", Environment.NewLine, html);
       return result;
     }
   }

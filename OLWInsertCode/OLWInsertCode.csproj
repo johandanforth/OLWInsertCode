@@ -55,7 +55,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OpenLiveWriter.Api">
-      <HintPath>C:\Users\Julian\AppData\Local\OpenLiveWriter\app-0.6.0.0\OpenLiveWriter.Api.dll</HintPath>
+      <HintPath>C:\Users\hp\AppData\Local\OpenLiveWriter\app-0.6.2\OpenLiveWriter.Api.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
