@@ -3,6 +3,8 @@
 
 _Fork from [OLWInsertCode](https://github.com/coldscientist/OLWInsertCode) to allow pasting code from any program into Open Live Writer_
 
+See also: [OLW Paste As](https://github.com/coldscientist/OLWPasteAs).
+
 Introduction
 ---
 
@@ -38,7 +40,7 @@ Compilling
 
 Compilling the code with Visual Studio or MSBuild will produce a DLL called `OLWInsertCode.dll`.
 
-1. You'll need to edit `OLWInsertCode.csproj` file and change `OpenLiveWriter.Api` Reference directory with your Open Live Writer installation directory.
+1. You'll need to edit `OLWInsertCode.csproj` file and change `RtfPipe` and `OpenLiveWriter.Api` Reference directory with your Open Live Writer installation directory.
 1. You can compile the code through Visual Studio or through MSBuild (doesn't require Visual Studio) typing the following command at **Command prompt**:
 
 ```

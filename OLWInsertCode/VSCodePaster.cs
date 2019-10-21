@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using OpenLiveWriter.Api;
 using RtfToHtml;
+using RtfPipe;
 
 namespace OLWInsertCode {
 
@@ -16,7 +17,8 @@ namespace OLWInsertCode {
       string html = null;
       if (Clipboard.ContainsText(TextDataFormat.Rtf)) {
         s = Clipboard.GetText(TextDataFormat.Rtf);
-        html = RtfParser.ParseRtf(s);
+        // html = RtfParser.ParseRtf(s);
+		html = RtfPipe.Rtf.ToHtml(s);
       } else {
         // content = "Clipboard is empty of RTF text. Did you copy some code from Visual Studio?";
         s = Clipboard.GetText();
