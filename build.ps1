@@ -63,5 +63,5 @@ Install-ModuleToDirectory -Name 'VSSetup' -Destination '.\PSModules'
 $msbuildLocation = Get-LatestMsbuildLocation
 set-alias msb $msbuildLocation 
 ## run msbuild.exe and restore nuget packages referenced
-msb -t:restore #yoursolution.sln
-
+msb -t:restore 
+msb 
