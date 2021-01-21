@@ -1,7 +1,7 @@
 ﻿Open Live Writer paste code
 ===
 
-_Fork from [OLWInsertCode](https://github.com/coldscientist/OLWInsertCode) to allow pasting code from any program into Open Live Writer_
+_Fork from [OLWInsertCode](https://github.com/coldscientist/OLWInsertCode) to allow pasting code from any program into Open Live Writer which is in turn forked from [OLWInsertCode](https://github.com/jmbucknall/OLWInsertCode)_
 
 See also: [OLW Paste As](https://github.com/coldscientist/OLWPasteAs).
 
