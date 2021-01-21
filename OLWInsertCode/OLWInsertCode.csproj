@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OLWInsertCode</RootNamespace>
     <AssemblyName>OLWInsertCode</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -55,10 +55,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OpenLiveWriter.Api">
-      <HintPath>C:\Users\hp\AppData\Local\OpenLiveWriter\app-0.6.2\OpenLiveWriter.Api.dll</HintPath>
+      <HintPath>..\libs\OpenLiveWriter.Api.dll</HintPath>
     </Reference>
     <Reference Include="RtfPipe">
-      <HintPath>C:\Users\hp\Documents\GitHub\OLWInsertCode\OLWInsertCode\RtfPipe.dll</HintPath>
+      <HintPath>..\libs\RtfPipe.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
